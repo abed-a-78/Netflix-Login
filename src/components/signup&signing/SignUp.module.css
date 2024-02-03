@@ -1,0 +1,139 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    width: min(450px, 80%);
+    background-color: rgba(0, 0, 0, 0.72);
+    border-radius: 3px;
+    padding: 60px;
+    color: #fff;
+    padding-bottom: 40px;
+    margin-bottom: 90px;
+}
+
+.formTitle {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.formFiled {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formFiled label {
+    color: #8f8f8f;
+    font-size: 0.9rem;
+}
+
+.formInput {
+    width: 100%;
+    border-radius: 5px;
+    border: unset;
+    outline: none;
+    padding: 0 20px;
+    line-height: 50px;
+    height: 50px;
+    align-items: center;
+    font-size: 15px;
+    transition: border-bottom-width 0.1s ease-in;
+    background-color: #333;
+    color: #fff;
+}
+
+::placeholder {
+    color: #8f8f8f;
+}
+
+.uncompleted {
+    border-bottom: 3px solid #e87c03;
+}
+
+.formFiled span {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #e87c03;
+}
+
+.formFiled a {
+    color: #8f8f8f;
+}
+
+.checkBoxContainer {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.checkBoxContainer :nth-child(n) {
+    cursor: pointer;
+}
+
+.formFiled:has(input[type="checkbox"]) {
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    accent-color: #8f8f8f;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btnsignup {
+    padding: 10px 20px;
+}
+
+.btnsignin {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.formSuggest {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    font-size: 0.9rem;
+    color: #8c8c8c;
+}
+
+.textLink {
+    color: #0b81f7;
+    cursor: pointer;
+}
+
+.formSuggest p {
+    font-size: 0.75rem;
+    line-height: 17px;
+    word-spacing: 3px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+@media(max-width: 600px) {
+    .formContainer {
+        padding: 25px;
+    }
+}

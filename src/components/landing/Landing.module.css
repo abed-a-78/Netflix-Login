@@ -1,0 +1,11 @@
+.container {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/images/bg-netflix.jpg) no-repeat;
+    background-size: cover;
+}
+
+.websiteLogo {
+    width: 200px;
+    fill: #e50914;
+    line-height: 90px;
+}
